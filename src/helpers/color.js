@@ -16,7 +16,7 @@ export const COLOR = {
   black: new Color('000000'),
   gray: new Color('555555'),
   red: new Color('bc2600'),
-  white: new Color('ffffff')
+  white: new Color('ffffff'),
 };
 
 export default Color;

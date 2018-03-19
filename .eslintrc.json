@@ -1,0 +1,36 @@
+{
+  "extends": [],
+  "plugins": [],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "plugins": [],
+  "rules": {
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "class-methods-use-this": "off",
+    "no-use-before-define": "off",
+    "comma-dangle": ["error", "always-multiline"],
+    "quotes": ["error", "single"],
+    "no-mixed-operators": [
+      "error",
+      {
+        "groups": [
+          ["&", "|", "^", "~", "<<", ">>", ">>>"],
+          ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+          ["&&", "||"],
+          ["in", "instanceof"]
+        ],
+        "allowSamePrecedence": true
+      }
+    ]
+  }
+}

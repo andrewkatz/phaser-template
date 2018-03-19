@@ -16,8 +16,8 @@ class LoadState extends Phaser.State {
       this.game.world.centerY + 180,
       'PRESS SPACE TO START',
       {
-        font: `10px 'Press Start 2P'`,
-        fill: '#ffffff'
+        font: '10px \'Press Start 2P\'',
+        fill: '#ffffff',
       }
     );
     this.startLabel.anchor.setTo(0.5, 0.5);
@@ -47,7 +47,10 @@ class LoadState extends Phaser.State {
       bmd.ctx.fill();
       this.titleBackdrop = this.game.world.create(0, 0, bmd);
       this.titleBackdrop.alpha = 0;
-      this.game.add.tween(this.titleBackdrop).to({ alpha: 1 }, 1000).start();
+      this.game.add
+        .tween(this.titleBackdrop)
+        .to({ alpha: 1 }, 1000)
+        .start();
     }
   }
 
@@ -61,8 +64,8 @@ class LoadState extends Phaser.State {
       this.game.world.centerY + 120,
       'LOADING',
       {
-        font: `10px 'Press Start 2P'`,
-        fill: '#ffffff'
+        font: '10px \'Press Start 2P\'',
+        fill: '#ffffff',
       }
     );
     this.loadingLabel.anchor.setTo(0.5, 0.5);

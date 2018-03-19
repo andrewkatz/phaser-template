@@ -5,12 +5,11 @@ class PlayState extends Phaser.State {
     TextFactory.build(this.game, {
       x: this.game.world.centerX,
       y: this.game.world.centerY,
-      text: 'hi'
+      text: 'hi',
     });
   }
 
-  update() {
-  }
+  update() {}
 }
 
 export default PlayState;

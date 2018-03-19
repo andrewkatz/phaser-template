@@ -9,5 +9,5 @@ export default {
 
   audio: [
     // { name: 'example', files: ['example.ogg', 'example.mp3'] }
-  ]
+  ],
 };

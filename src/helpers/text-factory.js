@@ -16,7 +16,7 @@ class TextFactory {
 
     return game.add.text(options.x, options.y, options.text, {
       font: `${size}px '${font}'`,
-      fill: color.toString()
+      fill: color.toString(),
     });
   }
 }
